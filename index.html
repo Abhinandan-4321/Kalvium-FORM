@@ -1,0 +1,67 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#FFE3E3">
+    <img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg" align="center">
+    <br><br><br><br>
+    <hr>
+    <h2>Registration Form</h2>
+
+    <form align=center action="mailto:abhinandan.gupta@kalvium.community" method="post" enctype="text/plain">
+    <div>
+        <label for="username">Name:</label>
+        <input type="text" name="Name" id="username">
+    </div><br>
+    <div>
+        <label for="yrid">E-Mail:</label>
+        <input type="email" name="mail" id="yrid" required>
+    </div><br>
+    <div>
+        <label for="num">Phone Number:</label>
+        <input type="number" name="number" ><br>
+    </div><br>
+    <div>
+        <label for="gen">Gender:</label>
+        <input type="radio" name="Gender" id="gen">Male &nbsp;&nbsp;&nbsp;<input type="radio" name="Gender" id="gen">Female
+    </div><br>
+    <div>
+        <label for="checking">Your certificates:</label><br>
+        <input type="checkbox" name="certificates" id="checking" value="marks">10th Marksheet<br>
+        <input type="checkbox" name="" id="checking" value="marks">12th Marksheet<br>
+    </div><br>
+    <div>
+        <label for="age">Date of Birth:</label>
+        <input type="date" id="age">
+    </div><br>
+    <div>
+    <label for="sport"> Your Favourite sports</label>
+    <select id="sport" multiple>
+        <option value="reth">BasketBall</option>
+        <option value="sfsf" selected>Footbal</option>
+        <option value="sfhf">Hockey</option>
+        <option value="shsf">Cricket</option>
+    </div>
+    </select>
+    <br><br>
+    <div>
+        <label for="area">Enter Your Thoughts on Kalvium</label>
+        <textarea></textarea>
+    </div><br>
+    <button type="submit" value="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
